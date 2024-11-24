@@ -1,0 +1,189 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo negro y texto blanco */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del header */
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sección de formulario */
+.form-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.form-section h2 {
+    color: #4caf50;  /* Tono verde más suave */
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #bbb;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;  /* Tono verde más suave */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #388e3c;  /* Verde más oscuro */
+}
+
+/* Estilo para el filtro */
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h2 {
+    color: #4caf50;  /* Tono verde más suave */
+}
+
+.filter-section input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sección de tabla */
+.table-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.table-section h2 {
+    color: #4caf50;  /* Tono verde más suave */
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+th {
+    background-color: #0b6d94;  /* Tono verde más suave */
+    color: #fff;
+}
+
+td {
+    background-color: #333;
+}
+
+.total-gain {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #f44336;  /* Rojo más suave */
+}
+
+button {
+    width: 40%;
+    padding: 12px;
+    background-color: #4caf50;  /* Tono verde más suave */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;  /* Verde más oscuro */
+}
+
+#clearAllButton {
+    background-color: #cc4f46;  /* Rojo más suave */
+}
+
+#clearAllButton:hover {
+    background-color: #f10707;  /* Rojo más oscuro */
+}
+
+#exportDataButton {
+    background-color: #1976d2;  /* Azul más suave */
+}
+
+#exportDataButton:hover {
+    background-color: #1565c0;  /* Azul más oscuro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .form-section, .filter-section, .table-section {
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #clearAllButton {
+        margin-right: 0;
+    }
+}
